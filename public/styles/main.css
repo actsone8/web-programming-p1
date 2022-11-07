@@ -1,0 +1,171 @@
+/*
+ * Color pallete:
+ *     primary - #d67e34
+ *     secondary - #bc9060
+ *     tertiary - #656363
+ *     quaternary - #2c2c2c
+ *
+ * Breakpoints:
+ *     mobile - default
+ *     tablet - min-width: 768px
+ *     desktop - min-width: 992px
+ */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1440px;
+  min-width: 320px;
+  color: #2c2c2c;
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+}
+
+/* HEADER */
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 900px;
+  padding-top: 70px;
+  background-image: url('../assets/counter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 1000px;
+  }
+}
+
+.title {
+  color: white;
+  font-family: 'Cookie', cursive;
+  font-size: 45px;
+  font-weight: normal;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.title em {
+  color: black;
+}
+
+/* menu */
+.menu {
+  position: relative;
+  top: -665px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: -710px;
+  }
+}
+
+.menu-card {
+  position: relative;
+  width: 350px;
+  height: 510px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-card__recommended {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 36px;
+  background-color: #d67e34;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.menu-card img {
+  position: absolute;
+  top: 72px;
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 50%;
+}
+
+.menu-card__price {
+  position: absolute;
+  top: 195px;
+  left: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #d67e34;
+  border-radius: 50%;
+  border: 7px solid white;
+  font-family: 'Cookie', cursive;
+  color: white;
+  font-size: 28px;
+}
+
+.menu-card h2 {
+  position: absolute;
+  top: 300px;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.menu-card p {
+  position: absolute;
+  top: 355px;
+  width: 226px;
+  height: 37px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.menu-card button {
+  position: absolute;
+  top: 435px;
+  border: none;
+  width: 220px;
+  height: 50px;
+  background-color: #d67e34;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
